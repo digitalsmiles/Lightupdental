@@ -1,125 +1,60 @@
-.c-kedLSQ .c-gMpNkY {max-width: 350px !important;}
-.vfrc-message {max-width: 350px !important;}
-/* use this file to override default styles when forking this repository */
+=========================== */
 
-/*
-  PAGE CONTENTS
+/* ------- Header (title block above avatar) ------- */
+.vfrc-assistant-info--title,
+.vfrc-header .vfrc-title {
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0px !important;   /* tighten space above subtitle */
+@media (max-width: 768px) {
+  .vfrc-chat--overlay {
+    bottom: 120px !important; /* Raises chat overlay higher from bottom */
+  }
+}
 
-  Customize the page that the chat bubble lives on
-*/
+.vfrc-assistant-info--description,
+.vfrc-header .vfrc-subtitle {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0px !important;   /* tighten space below subtitle */
+}
 
-/* .voiceflow-chat {} */
+/* Top avatar (shrink ~40% & tighten spacing) */
+.vfrc-assistant-info--avatar,
+.vfrc-avatar {
+  margin-bottom: 2px !important;
+  transform: scale(0.8) !important;
+  transform-origin: center !important;
+}
 
-/* .vfrc-launcher {} */
+/* ------- Conversation text ------- */
+.vfrc-message,
+.vfrc-user-response .vfrc-message {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+}
 
-/* .vfrc-chat--overlay {} */
+/* Pull the whole chat content slightly left (right side untouched) */
+.vfrc-message,
+.vfrc-user-response,
+.vfrc-quick-replies,
+.vfrc-input {
+  padding-left: 0px !important;
+}
 
-/* .vfrc-prompt {} */
+/* ------- Buttons (assistant actions & quick replies) ------- */
+.vfrc-button,
+.vfrc-system-response--actions .vfrc-button,
+.vfrc-quick-replies button {
+  font-size: 12px !important;
+  padding: 4px 8px !important;       /* compact, but still tappable */
+  margin-bottom: 4px !important;
+  border-radius: 10px !important;    /* restore original roundness */
+}
 
+/* ------- (Optional) message bubble width clamp used earlier ------- */
+/* Keep or remove these two if you don't want the 350px limit */
+.c-kedLSQ .c-gMpNkY { max-width: 350px !important; }
+.vfrc-message         { max-width: 350px !important; }
 
-/*
-  CHAT WIDGET HEADER
-
-  Customize the content, controls and styling included in your chat widget header, including the Assistant Information.
-  Note that changes to the assistant information here will be shared across other elements that consume this styling.
-*/
-
-/* .vfrc-header {} */
-
-/* .vfrc-assistant-info {} */
-
-/* .vfrc-assistant-info--title {} */
-
-/* .vfrc-assistant-info--description {} */
-
-/* .vfrc-avatar {} */
-
-/* .vfrc-icon {} */
-
-
-
-/*
-  CHAT MESSAGE BODY
-
-  Customize the layout and display of the chat body, and the conversation's metadata
-*/
-
-/* .vfrc-chat {} */
-
-/* .vfrc-chat--dialog {} */
-
-/* .vfrc-chat--spacer {} */
-
-/* .vfrc-chat--session-time {} */
-
-/* .vfrc-chat--status {} */
-
-/* .vfrc-message {} */
-
-/* .vfrc-timestamp {} */
-
-
-/*
-  ASSISTANT RESPONSES
-
-  Customize the style and layout of assistant response messages.
-*/
-
-/* .vfrc-system-response--indicator {} */
-
-/* .vfrc-system-response {} */
-
-/* .vfrc-system-response--controls {} */
-
-/* .vfrc-system-response--list {} */
-
-/* .vfrc-system-response--actions {} */
-
-/* .vfrc-button {} */
-
-/* .vfrc-image {} */
-
-/* .vfrc-image--background {} */
-
-/* .vfrc-card--content {} */
-
-/* .vfrc-card--header {} */
-
-/* .vfrc-card--description {} */
-
-/* .vfrc-carousel {} */
-
-/* .vfrc-carousel--button {} */
-
-/* Targeted styling for just the Assistant messages. */
-/* .vfrc-system-response .vfrc-message {} */
-
-/* Targeted styling for just the Assistant buttons. */
-/* .vfrc-system-response .vfrc-button {} */
-
-
-/*
-  USER RESPONSES
-
-  Customize the style and layout of users response messages.
-*/
-
-/* .vfrc-user-response {} */
-
-/* Targeted styling for just the User messages */
-/* .vfrc-user-response .vfrc-message {} */
-
-
-/*
-  FOOTER
-
-  Customize the layout and appearance of the message input field and the VF Branding
-*/
-
-/* .vf-footer {} */
-
-/* .vfrc-input {} */
-
-/* .vfrc-chat-input--button {} */
-
-/* .vfrc-footer--watermark {} */
+/* ------- Do NOT set colors here — we’re inheriting your VF theme ------- */
