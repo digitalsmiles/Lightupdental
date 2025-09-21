@@ -41,7 +41,7 @@
 .vfrc-user-response,
 .vfrc-quick-replies,
 .vfrc-input {
-  padding-left: 4px !important;
+  padding-left: 0px !important;
 }
 
 /* ------- Buttons (assistant actions & quick replies) ------- */
