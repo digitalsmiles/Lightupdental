@@ -34,3 +34,6 @@
   .vfrc-message-group           { padding: 8px 10px !important; }
   .vfrc-message--content        { padding: 10px 12px !important; border-radius: 12px !important; }
 }
+@media (max-width: 768px) {
+  body { background: red !important; }
+}
