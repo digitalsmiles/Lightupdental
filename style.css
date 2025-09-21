@@ -1,0 +1,36 @@
+/* ===== Voiceflow widget — MOBILE text shrink (only) ===== */
+@media (max-width: 768px) {
+  /* Make the widget’s own rem base smaller */
+  :host {
+    font-size: 12px !important;               /* <- change to 11–13px to taste */
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+
+  /* Safe catch-all: shrink most text */
+  .vfrc-widget,
+  .vfrc-widget * {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Header */
+  .vfrc-header .vfrc-title     { font-size: 14px !important; line-height: 1.25 !important; }
+  .vfrc-header .vfrc-subtitle  { font-size: 12px !important; line-height: 1.35 !important; }
+
+  /* Messages */
+  .vfrc-message                 { font-size: 12px !important; line-height: 1.45 !important; }
+  .vfrc-system-response .vfrc-message,
+  .vfrc-user-response   .vfrc-message { font-size: 12px !important; line-height: 1.45 !important; }
+
+  /* Quick replies & buttons */
+  .vfrc-system-response--actions .vfrc-button,
+  .vfrc-quick-replies button    { font-size: 12px !important; line-height: 1.35 !important; padding: 6px 10px !important; }
+
+  /* Input */
+  .vfrc-input input             { font-size: 12px !important; line-height: 1.35 !important; padding: 10px 12px !important; }
+
+  /* Bubble sizing tweaks (optional) */
+  .vfrc-message-group           { padding: 8px 10px !important; }
+  .vfrc-message--content        { padding: 10px 12px !important; border-radius: 12px !important; }
+}
