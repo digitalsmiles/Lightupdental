@@ -7,13 +7,12 @@
 .vfrc-icon { transform: scale(0.95) !important; }
 
 /* CHAT BODY */
-.vfrc-chat { font-size: 95% !important; }
-.vfrc-chat--dialog { font-size: 95% !important; }
-.vfrc-chat--spacer { font-size: 95% !important; }
-.vfrc-chat--session-time { font-size: 95% !important; }
-.vfrc-chat--status { font-size: 95% !important; }
-.vfrc-message { font-size: 95% !important; }
-.vfrc-timestamp { font-size: 95% !important; }
+.vfrc-chat,
+.vfrc-chat--dialog,
+.vfrc-widget--chat {
+  transform: none !important;
+}
+
 
 /* ASSISTANT RESPONSES */
 .vfrc-system-response--indicator { font-size: 95% !important; }
@@ -31,6 +30,7 @@
 .vfrc-carousel--button { transform: scale(0.95) !important; }
 .vfrc-system-response .vfrc-message { font-size: 95% !important; }
 .vfrc-system-response .vfrc-button { font-size: 95% !important; }
+.15emaa41 { font-size: 95% !important; }
 
 /* USER RESPONSES */
 .vfrc-user-response { font-size: 95% !important; }
