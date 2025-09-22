@@ -1,63 +1,41 @@
-=========================== */
+/* HEADER */
+.vfrc-header { font-size: 20px !important; }
+.vfrc-assistant-info { font-size: 95% !important; }
+.vfrc-assistant-info--title { font-size: 95% !important; }
+.vfrc-assistant-info--description { font-size: 95% !important; }
+.vfrc-avatar { transform: scale(0.95) !important; }
+.vfrc-icon { transform: scale(0.95) !important; }
 
-/* ------- Header (title block above avatar) ------- */
-.vfrc-assistant-info--title,
-.vfrc-header .vfrc-title {
-  font-size: 15px !important;
-  line-height: 1.2 !important;
-  margin-bottom: 0px !important;   /* tighten space above subtitle */
-@media (max-width: 768px) {
-  .vfrc-chat--overlay {
-    bottom: 120px !important; /* Raises chat overlay higher from bottom */
-  }
-}
+/* CHAT BODY */
+.vfrc-chat { font-size: 95% !important; }
+.vfrc-chat--dialog { font-size: 95% !important; }
+.vfrc-chat--spacer { font-size: 95% !important; }
+.vfrc-chat--session-time { font-size: 95% !important; }
+.vfrc-chat--status { font-size: 95% !important; }
+.vfrc-message { font-size: 95% !important; }
+.vfrc-timestamp { font-size: 95% !important; }
 
-.vfrc-assistant-info--description,
-.vfrc-header .vfrc-subtitle {
-  font-size: 12px !important;
-  line-height: 1.2 !important;
-  margin-bottom: 0px !important;   /* tighten space below subtitle */
-}
+/* ASSISTANT RESPONSES */
+.vfrc-system-response--indicator { font-size: 95% !important; }
+.vfrc-system-response { font-size: 95% !important; }
+.vfrc-system-response--controls { font-size: 95% !important; }
+.vfrc-system-response--list { font-size: 95% !important; }
+.vfrc-system-response--actions { font-size: 95% !important; }
+.vfrc-button { font-size: 95% !important; }
+.vfrc-image { transform: scale(0.95) !important; }
+.vfrc-image--background { transform: scale(0.95) !important; }
+.vfrc-card--content { font-size: 95% !important; }
+.vfrc-card--header { font-size: 95% !important; }
+.vfrc-card--description { font-size: 95% !important; }
+.vfrc-carousel { transform: scale(0.95) !important; }
+.vfrc-carousel--button { transform: scale(0.95) !important; }
+.vfrc-system-response .vfrc-message { font-size: 95% !important; }
+.vfrc-system-response .vfrc-button { font-size: 95% !important; }
 
-/* Top avatar (shrink ~40% & tighten spacing) */
-.vfrc-assistant-info--avatar,
-.vfrc-avatar {
-  margin-bottom: 2px !important;
-  transform: scale(0.8) !important;
-  transform-origin: center !important;
-}
+/* USER RESPONSES */
+.vfrc-user-response { font-size: 95% !important; }
+.vfrc-user-response .vfrc-message { font-size: 95% !important; }
 
-/* ------- Conversation text ------- */
-.vfrc-message,
-.vfrc-user-response .vfrc-message {
-  font-size: 12px !important;
-  line-height: 1.2 !important;
-}
-
-/* Pull the whole chat content slightly left (right side untouched) */
-.vfrc-message,
-.vfrc-user-response,
-.vfrc-quick-replies,
-.vfrc-input {
-  padding-left: 0px !important;
-}
-
-/* ------- Buttons (assistant actions & quick replies) ------- */
-.vfrc-button,
-.vfrc-system-response--actions .vfrc-button,
-.vfrc-quick-replies button {
-  font-size: 12px !important;
-  padding: 4px 8px !important;       /* compact, but still tappable */
-  margin-bottom: 4px !important;
-  border-radius: 10px !important;    /* restore original roundness */
-}
-
-/* ------- (Optional) message bubble width clamp used earlier ------- */
-/* Keep or remove these two if you don't want the 350px limit */
-.c-kedLSQ .c-gMpNkY { max-width: 350px !important; }
-.vfrc-message         { max-width: 350px !important; }
-
-.vf-footer {
-  font-size: 10px !important;
-}
-
+/* FOOTER */
+.vf-footer { font-size: 10px  !important; }
+.jsli365 { font-size: 10px !important; }
