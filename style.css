@@ -3,15 +3,17 @@
 .vfrc-assistant-info { font-size: 95% !important; }
 .vfrc-assistant-info--title { font-size: 95% !important; }
 .vfrc-assistant-info--description { font-size: 95% !important; }
-.vfrc-avatar { transform: scale(0.95) !important; }
-.vfrc-icon { transform: scale(0.95) !important; }
+.vfrc-avatar { transform: scale(0.8) !important; }
+.vfrc-icon { transform: scale(0.8) !important; }
 
 /* CHAT BODY */
-.vfrc-chat,
-.vfrc-chat--dialog,
-.vfrc-widget--chat {
-  transform: none !important;
-}
+.vfrc-chat { transform: scale(1) !important; }
+.vfrc-chat--dialog { transform: scale(0.95) !important; }
+.vfrc-chat--spacer { transform: scale(0.95) !important; }
+.vfrc-chat--session-time { transform: scale(0.95) !important; }
+.vfrc-chat--status { transform: scale(0.95) !important; }
+.vfrc-message { transform: scale(0.95) !important; }
+.vfrc-timestamp { transform: scale(0.95) !important; }
 
 
 /* ASSISTANT RESPONSES */
